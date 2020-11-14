@@ -1,0 +1,135 @@
+/* GLOBAL*/
+
+body {
+    width: 1366px;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    font-family: Helvetica;
+    color: rgb(53, 110, 173);
+    font-weight: bold;
+    margin-bottom: 34px;
+    padding-left: 16%;
+}
+
+h3 {
+    font-family: helvetica;
+    font-weight: bold;
+    font-size: 22px;
+    color: rgb(31, 63, 104);
+}
+
+p {
+    font-family: Arial;
+}
+
+.art_contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.firma {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+header ul {
+    display: flex;  
+}
+
+header li {
+    margin-left: 30px;
+}
+
+/* TITULO */
+
+.titulo {
+    position: relative;
+    text-align: center;
+}
+
+.titulo div {
+    position: absolute;
+    top: 20%;
+    color: white;
+    width: 100%;
+}
+
+.titulo div h1 {
+    font-size: 44px;
+    padding: 1% 30%;
+}
+
+.titulo div p {
+    padding: 2% 25%;
+}
+
+/* BUSCAR */
+
+.buscar {
+    text-align: center;
+}
+
+.buscar input {
+    width: 69%;
+    height: 60px;
+    background: rgb(244, 244, 244);
+    border: none;
+    border-radius: 15px;
+    margin: 56px 0;
+}
+
+/* POPULAR */
+
+.popular p {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.popular .articulos {
+    display: grid;
+    grid-template: 380px 477px / repeat(3, 22%);
+    gap: 2% 1%;
+    justify-content: center;
+}
+
+.popular .articulos article:first-child {
+    grid-column: span 3 ;
+    display: flex;
+}
+
+.popular .articulos article:first-child img {
+    margin-left: 20px;
+ }
+
+.popular .articulos article:first-child h3 {
+    font-size: 36px;
+    line-height: 46px;
+}
+
+.popular .articulos article:first-child p {
+    padding-right: 1%;
+    margin: 3% 0;
+}
+
+.popular a {
+    display: inline-block;
+}
+
+hr{
+    width: 69%;
+}

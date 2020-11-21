@@ -1,12 +1,13 @@
 /* GLOBAL*/
 
 body {
-    width: 1366px;
+    max-width: 1366px;
     margin: auto;
 }
 
 a {
     text-decoration: none;
+    color: rgb(53, 110, 173);;
 }
 
 h2 {
@@ -15,13 +16,6 @@ h2 {
     font-weight: bold;
     margin-bottom: 34px;
     padding-left: 16%;
-}
-
-h3 {
-    font-family: helvetica;
-    font-weight: bold;
-    font-size: 22px;
-    color: rgb(31, 63, 104);
 }
 
 p {
@@ -37,6 +31,28 @@ p {
 .firma {
     display: flex;
     justify-content: space-between;
+}
+
+.guardar {
+    display: flex;
+    align-items: center;
+    width: 60px;
+    justify-content: space-between;
+}
+
+h4 {
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgb(31, 63, 104);
+}
+
+span {
+    font-family: Arial;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgb(31, 63, 104);
 }
 
 /* HEADER */
@@ -62,6 +78,10 @@ header li {
     text-align: center;
 }
 
+.titulo img {
+    max-width: 100%;
+}
+
 .titulo div {
     position: absolute;
     top: 20%;
@@ -85,7 +105,7 @@ header li {
 }
 
 .buscar input {
-    width: 69%;
+    width: 68%;
     height: 60px;
     background: rgb(244, 244, 244);
     border: none;
@@ -103,8 +123,9 @@ header li {
 .popular .articulos {
     display: grid;
     grid-template: 380px 477px / repeat(3, 22%);
-    gap: 2% 1%;
+    gap: 10px;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 .popular .articulos article:first-child {
@@ -121,15 +142,107 @@ header li {
     line-height: 46px;
 }
 
-.popular .articulos article:first-child p {
-    padding-right: 1%;
-    margin: 3% 0;
+.popular .articulos article h3 {
+    font-family: helvetica;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 32px;
+    color: rgb(31, 63, 104);
 }
 
 .popular a {
-    display: inline-block;
+    display: block;
+    text-align: end;
+    margin-right: 16%;
 }
 
-hr{
-    width: 69%;
+main hr{
+    width: 68%;
+    margin: 30px 16% 50px;
+}
+
+
+/* ALL */
+
+.all .all_article {
+    display: grid;
+    grid-template: repeat(5, 200px) / 68%;
+    gap: 20px;
+    justify-content: center;
+}
+
+.all .all_article article {
+    display: flex;
+}
+
+.all .all_article img {
+    margin-right: 20px;
+}
+
+.all .all_article h3 {
+    font-family: helvetica;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+    color: rgb(31, 63, 104);
+}
+
+.all .all_article p {
+    font-family: Arial;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.more{
+    display: flex;
+    justify-content: space-between;
+    width: 68%;
+    margin: 50px 16%;
+    font-family: Arial;
+}
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    background-color: rgb(49, 96, 153);
+    border-radius: 0 200px 0 0;
+}
+
+footer .footer_up {
+    display: flex;
+    margin: 0 16%;
+    padding: 90px 0;
+}
+
+footer .footer_up span {
+    color: white;
+    font-family: Helvetica;
+    font-size: 36px;
+    line-height: 46px;
+    width: 300px;
+    display: block;
+    margin-bottom: 30px;
+}
+
+footer .footer_up p {
+    font-family: Arial;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.6);
+    width: 460px;
+}
+
+footer .footer_up a {
+    color: white;
+    font-family: Arial;
+    font-size: 16px;
+    padding: 20px 80px;
+    background: rgb(90, 152, 208);
+    border-radius: 10px;
+}
+
+.hablemos {
+    align-self: center;
+    text-align: right;
 }
